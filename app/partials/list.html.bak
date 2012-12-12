@@ -1,0 +1,31 @@
+<p>This is the partial for List.</p>
+
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+
+    </div>
+    <div class="span10">
+      <!--Body content-->
+
+      <ul class="phones">
+        <li ng-repeat="phone in phones.records" class="thumbnail">
+          <a href="#/phones/{{phone._id}}">{{phone.name}}</a>
+          <p>{{phone.date}}</p>
+          <p>{{phone.latitude}}/{{phone.longitude}}</p>
+          <p>{{phone.description}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -15,5 +15,12 @@ describe('filter', function() {
     it('should replace VERSION', inject(function(interpolateFilter) {
       expect(interpolateFilter('before %VERSION% after')).toEqual('before TEST_VER after');
     }));
+
   });
+
+    describe('range', function() {
+        it("should return 0 when given 0", inject(function'rangescott') {
+            expect(rangscott(0,0)).toEqual(0);
+        }
+    });
 });
