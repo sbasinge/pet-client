@@ -2,8 +2,8 @@
 
 /* Services */
 
-//var src = "https://petfinder-basinc.rhcloud.com/dogtag";
-var src = "http://localhost:3001\:3001/dogtag";
+var src = "https://petfinder-basinc.rhcloud.com/dogtag";
+//var src = "http://localhost:3001\:3001/dogtag";
 
 angular.module('petClient.services', ['ngResource']).
     factory('Pet', function($resource){
